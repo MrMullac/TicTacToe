@@ -1,0 +1,503 @@
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+/*************************************************************    
+  Landing Page Styling
+*************************************************************/
+#s_landingP{
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+.s_landingContainer{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.s_landingContainer span{
+  text-transform: uppercase;
+  display: block;
+}
+
+.s_landingText{
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.button1 {
+  background-color: red;
+  padding: 10px 20px; 
+  color: white; 
+  border: none;
+  animation: buttonFade 3s 1;
+  font-weight: bold;
+}
+
+@keyframes buttonFade {
+  0%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.button1:hover {
+  background-color: red;
+  color: black;
+}
+
+@keyframes text {
+  0%{
+    color: white;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+.s_landingH{
+  height: 12vh;
+}
+
+.gHeight{
+  height: 82vh;
+}
+
+/*************************************************************    
+  Register Page Styling
+*************************************************************/
+#s_registerP{
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.s_regDiv{
+  margin: auto;
+  padding-left: 30%;
+  padding-top: 5%;
+  height: 100vh;
+}
+
+.s_registerB{
+  background-color: gray;
+}
+
+.regContainer{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.regContainer .regTitle{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.regContainer .regTitle::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 133px;
+  border-radius: 5px;
+  background: green;
+}
+.regContent form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: green;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: green;
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: darkgreen;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .regContent form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .regContainer .regContent .category{
+    flex-direction: column;
+  }
+}
+
+/*************************************************************    
+  Game Page Styling
+*************************************************************/
+
+#s_gamePbb{
+  display: none;
+  height: 100vh;
+}
+
+#s_gamePttt{
+  display: none;
+  height: 100vh;
+}
+
+.title {
+  fill: rgba(255,255,255,1); 
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.78);
+}
+
+.Title {
+	left: 77px;
+	top: 11px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+
+.game {
+  margin: 10px auto;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 450px;
+}
+
+.tile {
+  min-width: 150px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  color: #707070;
+}
+
+.tileHorizontal {
+  border-bottom: 3px solid #707070;
+  border-top: 3px solid #707070;
+}
+
+.tileVertical {
+  border-left: 3px solid #707070;
+  border-right: 3px solid #707070;
+}
+
+.gamePageContainer {  
+  height: 100%;
+  display: grid;
+  grid-template-columns: 14% 3fr 0.7fr;
+  grid-template-rows: 0.2fr 2.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Nav Nav Nav"
+    "Info Game Leaderboard"
+    "Info Players Leaderboard";
+}
+
+.Nav { 
+  grid-area: Nav; 
+  fill: rgba(255,255,255,1); 
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.78);
+  padding-left: 10px;
+}
+
+.Info { 
+  grid-area: Info; 
+  background: #F1F3F5;    
+}
+
+/* Leaderboard Area */
+
+.Leaderboard {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "LeaderboardTitle LeaderboardTitle LeaderboardTitle"
+    "LeaderboardArea LeaderboardArea LeaderboardArea"
+    "LeaderboardArea LeaderboardArea LeaderboardArea";
+  grid-area: Leaderboard;
+}
+
+.LeaderboardTitle { 
+  grid-area: LeaderboardTitle; 
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.LeaderboardArea { 
+  grid-area: LeaderboardArea; 
+  background: #F1F3F5;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.Game { 
+  grid-area: Game; 
+  background: #F8F9FA;
+}
+
+/* Player Area */
+
+.Players {  display: grid;
+  grid-template-columns: 1.5fr 0fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Player1 . Player-two"
+    "Player1 . Player-two"
+    "Player1 . Player-two";
+  grid-area: Players;
+}
+
+.Player1 { 
+  grid-area: Player1;
+  background: #E9ECEF;
+  border-right: 1px solid grey;
+  padding-left: 10px;
+}
+
+.Player-two { 
+  grid-area: Player-two; 
+  background: #E9ECEF;
+}
+
+.playerTwoName { 
+  text-align: right;
+  padding-right: 10px;
+}
+
+.playerTwoStats { 
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+/* Lobby */
+
+#s_lobbyP{
+  display: none;
+  height: 100vh;
+}
+
+.button2 {
+  background-color: red;
+  padding: 10px 20px; 
+  color: white; 
+  border: none;
+  font-weight: bold;
+}
+
+.button2:hover {
+  background-color: red;
+  color: black;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  padding: 8px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.p_LobbyHeader{
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Game Select */
+
+#s_chooseGame{
+  display: none;
+}
+
+/*************************************************************    
+  Game Page Styling
+*************************************************************/
+#s_gameP{
+  display: none;
+  height: 100vh;
+  background-color: #dcdcdc
+}
+
+
+.gHeight{
+  height: 100vh;
+}
+
+.bb_header{
+  text-align: center;
+  font-size: 30px;
+}
+
+.bb_breakDiv{
+  position: absolute;
+  height: 3px;
+  width: 16.66%;
+  background: white;
+}
+
+.bb_buttons{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 90px;
+}
+
+.bb_scoreGUI{
+  padding: 10px;
+}
+
+canvas {
+  display: block;
+}
+
+
+/*************************************************************    
+  ADMIN page & BUTTON styling
+*************************************************************/
+#s_adminPage {
+  display: none;
+  height: 86vh;
+  overflow: scroll;
+}
+
+#b_lpAdmin {
+  display: none;   /* none = don't display element */
+}
+
+#b_gpAdmin {
+  display: none;   /* none = don't display element */
+}
